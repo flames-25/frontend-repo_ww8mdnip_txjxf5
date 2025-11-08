@@ -18,7 +18,7 @@ export default function HowItWorks() {
           {orbits.map((o, i) => (
             <motion.div
               key={i}
-              className={`absolute rounded-full bg-gradient-to-br ${o.color} opacity-30`}
+              className={`absolute rounded-full bg-gradient-to-br ${o.color} opacity-20 blur-xl`}
               style={{ width: o.size, height: o.size }}
               initial={{ rotate: 0, x: -o.size / 2, y: -o.size / 2 }}
               animate={{ rotate: 360 }}
@@ -30,8 +30,8 @@ export default function HowItWorks() {
 
       <div className="mx-auto max-w-6xl px-6 relative">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">How it works</h2>
-          <p className="mt-3 text-gray-600">Three simple steps to go from idea to an interactive, investor-ready pitch.</p>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">How it works</h2>
+          <p className="mt-3 text-zinc-300">Three simple steps to go from idea to an interactive, investor-ready pitch.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
@@ -48,15 +48,15 @@ export default function HowItWorks() {
             title: 'Present & share',
             desc: 'One-click share links and live embeds for your deck.',
           }].map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="group relative rounded-2xl border border-black/10 bg-white/70 backdrop-blur p-6 overflow-hidden">
+            <div key={title} className="group relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6 overflow-hidden">
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                <div className="absolute -inset-24 bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.15),transparent_60%)]" />
+                <div className="absolute -inset-24 bg-[radial-gradient(circle_at_center,rgba(250,204,21,0.12),transparent_60%)]" />
               </div>
-              <div className="h-10 w-10 rounded-md bg-gray-900 text-white grid place-items-center">
+              <div className="h-10 w-10 rounded-md bg-amber-500 text-black grid place-items-center">
                 <Icon size={18} />
               </div>
-              <h3 className="mt-4 font-semibold text-gray-900">{title}</h3>
-              <p className="mt-2 text-sm text-gray-600">{desc}</p>
+              <h3 className="mt-4 font-semibold text-white">{title}</h3>
+              <p className="mt-2 text-sm text-zinc-300">{desc}</p>
             </div>
           ))}
         </div>
