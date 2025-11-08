@@ -3,37 +3,24 @@ import Spline from '@splinetool/react-spline';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[80vh] w-full overflow-hidden bg-white">
+    <section className="relative min-h-[80vh] grid place-items-center overflow-hidden">
       <div className="absolute inset-0">
-        <Spline
-          scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode"
-          style={{ width: '100%', height: '100%' }}
-        />
+        <Spline scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/70 via-white/40 to-white/80" />
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/70 via-white/80 to-white" />
-
-      <div className="relative mx-auto flex max-w-7xl flex-col items-center px-6 pt-24 text-center sm:pt-28">
-        <span className="rounded-full bg-red-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-red-600 ring-1 ring-red-100">
-          SmartPitch
-        </span>
-        <h1 className="mt-6 text-4xl font-extrabold leading-tight text-gray-900 sm:text-6xl">
-          Pitch confidently — your IP is protected
+      <div className="relative z-10 mx-auto max-w-6xl px-6 py-20 text-center">
+        <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-gray-900 to-gray-700">
+          Pitch smarter with interactive 3D.
         </h1>
-        <p className="mt-5 max-w-2xl text-base text-gray-600 sm:text-lg">
-          A secure pitch vault that timestamps your ideas on Story Protocol and shares them with expiring, view-only licenses.
+        <p className="mt-4 text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+          SmartPitch helps you craft stunning product demos and investor-ready decks with immersive Spline visuals and AI-powered storytelling.
         </p>
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <a
-            href="#cta"
-            className="inline-flex items-center justify-center rounded-md bg-gray-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-gray-800"
-          >
-            Get Started
+        <div className="mt-8 flex items-center justify-center gap-3">
+          <a href="#cta" className="px-5 py-3 rounded-lg bg-gray-900 text-white hover:bg-gray-800 transition-colors">
+            Start free
           </a>
-          <a
-            href="#how"
-            className="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-sm font-semibold text-gray-900 ring-1 ring-gray-200 transition hover:ring-gray-300"
-          >
+          <a href="#how" className="px-5 py-3 rounded-lg bg-white/70 backdrop-blur border border-black/10 hover:bg-white/90 transition-colors">
             See how it works
           </a>
         </div>
