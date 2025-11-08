@@ -6,12 +6,12 @@ export default function Hero() {
     <section className="relative min-h-[80vh] w-full overflow-hidden bg-white">
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/k3vzWf8TfEDJKl71/scene.splinecode"
+          scene="https://prod.spline.design/N8g2VNcx8Rycz93J/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/80 via-white/80 to-white" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/70 via-white/80 to-white" />
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center px-6 pt-24 text-center sm:pt-28">
         <span className="rounded-full bg-red-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-red-600 ring-1 ring-red-100">
